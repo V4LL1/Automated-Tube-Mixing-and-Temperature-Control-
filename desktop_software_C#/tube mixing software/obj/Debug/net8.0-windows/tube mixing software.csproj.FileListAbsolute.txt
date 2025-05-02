@@ -1,0 +1,40 @@
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\tube mixing software.exe
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\tube mixing software.deps.json
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\tube mixing software.runtimeconfig.json
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\tube mixing software.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\tube mixing software.pdb
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Properties.Resources.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.csproj.GenerateResource.cache
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.AssemblyInfoInputs.cache
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.AssemblyInfo.cs
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\refint\tube mixing software.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.pdb
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.genruntimeconfig.cache
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\ref\tube mixing software.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Entrar.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Inicio.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Registar.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mixing software.csproj.AssemblyReference.cache
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube mix.73451698.Up2Date
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Principal.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Iniciar.resources
+C:\Users\guilh\Desktop\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\desktop_software_C#\tube mixing software\obj\Debug\net8.0-windows\tube_mixing_software.Historico.resources
