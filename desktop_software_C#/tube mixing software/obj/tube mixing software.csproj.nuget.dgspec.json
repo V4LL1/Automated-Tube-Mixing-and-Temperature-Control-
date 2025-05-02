@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.2.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
