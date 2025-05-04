@@ -1,9 +1,8 @@
 #include "DHT.h"
 
-#define DHTPIN 23          // Pino de dados do DHT22
-#define DHTTYPE DHT22     // Tipo do sensor
+#define DHTPIN 23
+#define DHTTYPE DHT22
 
-// Pinos dos relés
 #define RELAY1 18
 #define RELAY2 19
 #define RELAY3 26
@@ -11,50 +10,47 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
+unsigned long relayTimers[4] = {0, 0, 0, 0};
+bool relaysActive[4] = {false, false, false, false};
+const int relayPins[4] = {RELAY1, RELAY2, RELAY3, RELAY4};
+
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   dht.begin();
 
-  // Configura os pinos dos relés como saída
-  pinMode(RELAY1, OUTPUT);
-  pinMode(RELAY2, OUTPUT);
-  pinMode(RELAY3, OUTPUT);
-  pinMode(RELAY4, OUTPUT);
-
-  // Desliga todos os relés no início (nível ALTO se acionamento for por nível BAIXO)
-  digitalWrite(RELAY1, HIGH);
-  digitalWrite(RELAY2, HIGH);
-  digitalWrite(RELAY3, HIGH);
-  digitalWrite(RELAY4, HIGH);
+  for (int i = 0; i < 4; i++) {
+    pinMode(relayPins[i], OUTPUT);
+    digitalWrite(relayPins[i], HIGH); // RELÉ desligado (ativo em LOW)
+  }
 }
 
 void loop() {
-  float temp = dht.readTemperature();
-  float hum = dht.readHumidity();
-
-  if (isnan(temp) || isnan(hum)) {
-    Serial.println("Falha ao ler do sensor DHT!");
-    return;
+  float t = dht.readTemperature();
+  if (!isnan(t)) {
+    Serial.print("TEMP:");
+    Serial.println(t); // Importante o println (para o ReadLine do C#)
   }
 
-  Serial.print("Temperatura: ");
-  Serial.print(temp);
-  Serial.print(" °C\tUmidade: ");
-  Serial.print(hum);
-  Serial.println(" %");
+  if (Serial.available()) {
+    String cmd = Serial.readStringUntil('\n');
+    cmd.trim();
 
-  // Lógica para ativar relés com base na temperatura
-  if (temp > 30) {
-    digitalWrite(RELAY1, LOW);  // Liga relé 1
-  } else {
-    digitalWrite(RELAY1, HIGH); // Desliga relé 1
+    for (int i = 1; i <= 4; i++) {
+      if (cmd.startsWith("ON" + String(i) + ":")) {
+        int dur = cmd.substring(4).toInt();
+        digitalWrite(relayPins[i - 1], LOW); // Liga relé
+        relaysActive[i - 1] = true;
+        relayTimers[i - 1] = millis() + dur * 1000;
+      }
+    }
   }
 
-  if (temp > 35) {
-    digitalWrite(RELAY2, LOW);  // Liga relé 2
-  } else {
-    digitalWrite(RELAY2, HIGH); // Desliga relé 2
+  for (int i = 0; i < 4; i++) {
+    if (relaysActive[i] && millis() > relayTimers[i]) {
+      digitalWrite(relayPins[i], HIGH); // Desliga relé
+      relaysActive[i] = false;
+    }
   }
 
-  delay(2000); // Espera 2 segundos antes da próxima leitura
+  delay(2000); // Intervalo entre leituras
 }

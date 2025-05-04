@@ -11,7 +11,7 @@ namespace tube_mixing_software
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Testes());
+            Application.Run(new Inicio());
         }
     }
 }
