@@ -1,12 +1,12 @@
 #include "DHT.h"
 
-#define DHTPIN 4
+#define DHTPIN 23
 #define DHTTYPE DHT22
 
-#define RELAY1 16
-#define RELAY2 17
-#define RELAY3 18
-#define RELAY4 19
+#define RELAY1 18
+#define RELAY2 19
+#define RELAY3 26
+#define RELAY4 27
 
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -20,7 +20,7 @@ void setup() {
 
   for (int i = 0; i < 4; i++) {
     pinMode(relayPins[i], OUTPUT);
-    digitalWrite(relayPins[i], HIGH);
+    digitalWrite(relayPins[i], HIGH); // HIGH = desligado (relé ativo em LOW)
   }
 }
 
@@ -37,8 +37,8 @@ void loop() {
 
     for (int i = 1; i <= 4; i++) {
       if (cmd.startsWith("ON" + String(i) + ":")) {
-        int dur = cmd.substring(4).toInt();
-        digitalWrite(relayPins[i - 1], LOW);
+        int dur = cmd.substring(4).toInt(); // tempo em segundos
+        digitalWrite(relayPins[i - 1], LOW); // ativa o relé (LOW)
         relaysActive[i - 1] = true;
         relayTimers[i - 1] = millis() + dur * 1000;
       }
@@ -47,7 +47,7 @@ void loop() {
 
   for (int i = 0; i < 4; i++) {
     if (relaysActive[i] && millis() > relayTimers[i]) {
-      digitalWrite(relayPins[i], HIGH);
+      digitalWrite(relayPins[i], HIGH); // desliga o relé
       relaysActive[i] = false;
     }
   }

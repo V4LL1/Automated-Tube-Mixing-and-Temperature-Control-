@@ -1,13 +1,13 @@
 #include "DHT.h"
 
-#define DHTPIN 4          // Pino de dados do DHT22
+#define DHTPIN 23          // Pino de dados do DHT22
 #define DHTTYPE DHT22     // Tipo do sensor
 
 // Pinos dos relés
-#define RELAY1 16
-#define RELAY2 17
-#define RELAY3 18
-#define RELAY4 19
+#define RELAY1 18
+#define RELAY2 19
+#define RELAY3 26
+#define RELAY4 27
 
 DHT dht(DHTPIN, DHTTYPE);
 

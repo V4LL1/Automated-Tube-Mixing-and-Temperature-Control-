@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{AAB4CE73-E779-4074-8130-04145EF1DE73}|tube mixing software.csproj|solutionrelative:testes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAB4CE73-E779-4074-8130-04145EF1DE73}|tube mixing software.csproj|c:\\users\\guilh\\desktop\\automated test tube mixing and temperature control system using esp32 and c#\\desktop_software_c#\\tube mixing software\\testes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AAB4CE73-E779-4074-8130-04145EF1DE73}|tube mixing software.csproj|C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\testes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AAB4CE73-E779-4074-8130-04145EF1DE73}|tube mixing software.csproj|solutionrelative:testes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -82,21 +82,19 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T17:35:27.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T17:35:27.865Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "tube mixing software",
+              "Title": "tube mixing software.csproj",
               "DocumentMoniker": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\tube mixing software.csproj",
               "RelativeDocumentMoniker": "tube mixing software.csproj",
               "ToolTip": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\tube mixing software.csproj",
               "RelativeToolTip": "tube mixing software.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-02T17:29:48.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T17:29:48.291Z"
             },
             {
               "$type": "Document",
@@ -106,7 +104,7 @@
               "RelativeDocumentMoniker": "Testes.cs",
               "ToolTip": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\Testes.cs",
               "RelativeToolTip": "Testes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T17:30:20.175Z",
               "EditorCaption": ""
@@ -120,8 +118,7 @@
               "ToolTip": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\Testes.cs [Projeto]",
               "RelativeToolTip": "Testes.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T17:30:16.931Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-05-02T17:30:16.931Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "ToolTip": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\Historico.cs [Projeto]",
               "RelativeToolTip": "Historico.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T14:57:01.806Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-04-11T14:57:01.806Z"
             },
             {
               "$type": "Document",
@@ -239,8 +235,7 @@
               "ToolTip": "C:\\Users\\guilh\\Desktop\\Automated Test Tube Mixing and Temperature Control System using ESP32 and C#\\desktop_software_C#\\tube mixing software\\Entrar.cs [Projeto]",
               "RelativeToolTip": "Entrar.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T00:42:46.121Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-04-07T00:42:46.121Z"
             },
             {
               "$type": "Document",

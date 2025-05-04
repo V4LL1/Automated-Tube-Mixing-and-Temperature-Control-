@@ -13,11 +13,19 @@ namespace tube_mixing_software
 {
     public partial class Testes : Form
     {
-        private SerialPort serialPort;
+        private SerialPort serialPort;  
         public Testes()
         {
             InitializeComponent();
-            cmbPortas.DataSource = SerialPort.GetPortNames();
+            LoadSerialPorts();
+        }
+
+        private void LoadSerialPorts()
+        {
+            string[] portas = SerialPort.GetPortNames();
+            cmbPortas.DataSource = portas;
+            if (portas.Contains("COM3"))
+                cmbPortas.SelectedItem = "COM3";
         }
 
         private void btnConectar_Click(object sender, EventArgs e)
@@ -26,6 +34,8 @@ namespace tube_mixing_software
             {
                 serialPort = new SerialPort(cmbPortas.SelectedItem.ToString(), 9600);
                 serialPort.DataReceived += SerialPort_DataReceived;
+                serialPort.Encoding = Encoding.ASCII;
+                serialPort.ReadTimeout = 2000;
                 serialPort.Open();
                 txtLog.AppendText("Conectado com sucesso!\r\n");
             }
@@ -37,16 +47,23 @@ namespace tube_mixing_software
 
         private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            string data = serialPort.ReadLine().Trim();
-            Invoke(new Action(() =>
+            try
             {
-                txtLog.AppendText("Recebido: " + data + "\r\n");
-
-                if (data.StartsWith("TEMP:"))
+                string data = serialPort.ReadLine().Trim();
+                BeginInvoke(new Action(() =>
                 {
-                    lblTemperatura.Text = data.Substring(5) + " °C";
-                }
-            }));
+                    txtLog.AppendText("Recebido: " + data + "\r\n");
+                    if (data.StartsWith("TEMP:"))
+                        lblTemperatura.Text = data.Substring(5) + " °C";
+                }));
+            }
+            catch (Exception ex)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    txtLog.AppendText("Erro de leitura: " + ex.Message + "\r\n");
+                }));
+            }
         }
 
         private void EnviarComando(string comando)
