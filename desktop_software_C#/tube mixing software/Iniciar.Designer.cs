@@ -32,9 +32,11 @@
             iniciarBtn = new Button();
             contextMenuStrip1 = new ContextMenuStrip(components);
             label4 = new Label();
-            tempTxt = new TextBox();
+            txtTemp = new TextBox();
             label1 = new Label();
             tempoTxt = new TextBox();
+            lblTemperatura = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // iniciarBtn
@@ -49,6 +51,7 @@
             iniciarBtn.TabIndex = 7;
             iniciarBtn.Text = "Iniciar";
             iniciarBtn.UseVisualStyleBackColor = false;
+            iniciarBtn.Click += iniciarBtn_Click;
             // 
             // contextMenuStrip1
             // 
@@ -66,12 +69,12 @@
             label4.TabIndex = 20;
             label4.Text = "Temperatura:";
             // 
-            // tempTxt
+            // txtTemp
             // 
-            tempTxt.Location = new Point(170, 159);
-            tempTxt.Name = "tempTxt";
-            tempTxt.Size = new Size(277, 25);
-            tempTxt.TabIndex = 19;
+            txtTemp.Location = new Point(170, 159);
+            txtTemp.Name = "txtTemp";
+            txtTemp.Size = new Size(277, 25);
+            txtTemp.TabIndex = 19;
             // 
             // label1
             // 
@@ -91,20 +94,39 @@
             tempoTxt.Size = new Size(277, 25);
             tempoTxt.TabIndex = 17;
             // 
+            // lblTemperatura
+            // 
+            lblTemperatura.AutoSize = true;
+            lblTemperatura.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTemperatura.ForeColor = Color.FromArgb(60, 110, 113);
+            lblTemperatura.Location = new Point(301, 126);
+            lblTemperatura.Name = "lblTemperatura";
+            lblTemperatura.Size = new Size(0, 18);
+            lblTemperatura.TabIndex = 21;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(170, 503);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 25);
+            textBox1.TabIndex = 22;
+            // 
             // Iniciar
             // 
             AutoScaleDimensions = new SizeF(10F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 240, 248);
             ClientSize = new Size(624, 601);
+            Controls.Add(textBox1);
+            Controls.Add(lblTemperatura);
             Controls.Add(label4);
-            Controls.Add(tempTxt);
+            Controls.Add(txtTemp);
             Controls.Add(label1);
             Controls.Add(tempoTxt);
             Controls.Add(iniciarBtn);
             Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = Color.FromArgb(60, 110, 113);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Iniciar";
             Text = "Iniciar";
             ResumeLayout(false);
@@ -116,8 +138,10 @@
         private Button iniciarBtn;
         private ContextMenuStrip contextMenuStrip1;
         private Label label4;
-        private TextBox tempTxt;
+        private TextBox txtTemp;
         private Label label1;
         private TextBox tempoTxt;
+        private Label lblTemperatura;
+        private TextBox textBox1;
     }
 }

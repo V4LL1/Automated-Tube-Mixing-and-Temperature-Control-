@@ -8,8 +8,6 @@ namespace tube_mixing_software
 {
     public partial class Testes : Form
     {
-        private SerialPort serialPort;
-
         public Testes()
         {
             InitializeComponent();
@@ -27,12 +25,15 @@ namespace tube_mixing_software
         {
             try
             {
-                string data = serialPort.ReadLine().Trim();
+                string data = SerialManager.Port.ReadLine().Trim();
+                if (data.StartsWith("TEMP:"))
+                {
+                    SerialManager.UltimaTemperatura = data.Substring(5);
+                }
+
                 BeginInvoke(new Action(() =>
                 {
                     txtLog.AppendText("Recebido: " + data + "\r\n");
-                    if (data.StartsWith("TEMP:"))
-                        lblTemperatura.Text = data.Substring(5) + " °C";
                 }));
             }
             catch (Exception ex)
@@ -46,9 +47,9 @@ namespace tube_mixing_software
 
         private void EnviarComando(string comando)
         {
-            if (serialPort != null && serialPort.IsOpen)
+            if (SerialManager.Port != null && SerialManager.Port.IsOpen)
             {
-                serialPort.WriteLine(comando);
+                SerialManager.Port.WriteLine(comando);
                 txtLog.AppendText("Enviado: " + comando + "\r\n");
             }
             else
@@ -61,10 +62,10 @@ namespace tube_mixing_software
         {
             try
             {
-                serialPort = new SerialPort(cmbPortas.SelectedItem.ToString(), 9600);
-                serialPort.DataReceived += SerialPort_DataReceived;
-                serialPort.Encoding = Encoding.ASCII;
-                serialPort.Open();
+                SerialManager.Port = new SerialPort(cmbPortas.SelectedItem.ToString(), 9600);
+                SerialManager.Port.DataReceived += SerialPort_DataReceived;
+                SerialManager.Port.Encoding = Encoding.ASCII;
+                SerialManager.Port.Open();
                 txtLog.AppendText("Conectado com sucesso!\r\n");
             }
             catch (Exception ex)
@@ -92,5 +93,12 @@ namespace tube_mixing_software
         {
             EnviarComando("ON4:" + txtTempo.Text);
         }
+
+        private void Testes_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (SerialManager.Port != null && SerialManager.Port.IsOpen)
+                SerialManager.Port.Close();
+        }
+
     }
 }

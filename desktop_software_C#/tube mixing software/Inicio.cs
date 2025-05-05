@@ -33,5 +33,11 @@ namespace tube_mixing_software
             Registar registar = new Registar();
             registar.Show();
         }
+
+        private void testBtn_Click(object sender, EventArgs e)
+        {
+            Testes testes = new Testes();
+            testes.Show();
+        }
     }
 }

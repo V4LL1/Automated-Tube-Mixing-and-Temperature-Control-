@@ -31,6 +31,7 @@
             EntrarBtn = new Button();
             RegistrarBtn = new Button();
             SairBtn = new Button();
+            testBtn = new Button();
             SuspendLayout();
             // 
             // EntrarBtn
@@ -66,7 +67,7 @@
             SairBtn.BackColor = Color.FromArgb(60, 110, 113);
             SairBtn.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SairBtn.ForeColor = Color.White;
-            SairBtn.Location = new Point(227, 380);
+            SairBtn.Location = new Point(227, 475);
             SairBtn.Margin = new Padding(2, 3, 2, 3);
             SairBtn.Name = "SairBtn";
             SairBtn.Size = new Size(170, 62);
@@ -75,12 +76,27 @@
             SairBtn.UseVisualStyleBackColor = false;
             SairBtn.Click += SairBtn_Click;
             // 
+            // testBtn
+            // 
+            testBtn.BackColor = Color.FromArgb(60, 110, 113);
+            testBtn.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            testBtn.ForeColor = Color.White;
+            testBtn.Location = new Point(227, 361);
+            testBtn.Margin = new Padding(2, 3, 2, 3);
+            testBtn.Name = "testBtn";
+            testBtn.Size = new Size(170, 62);
+            testBtn.TabIndex = 7;
+            testBtn.Text = "Testes";
+            testBtn.UseVisualStyleBackColor = false;
+            testBtn.Click += testBtn_Click;
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 240, 248);
             ClientSize = new Size(624, 601);
+            Controls.Add(testBtn);
             Controls.Add(SairBtn);
             Controls.Add(RegistrarBtn);
             Controls.Add(EntrarBtn);
@@ -94,5 +110,6 @@
         private Button EntrarBtn;
         private Button RegistrarBtn;
         private Button SairBtn;
+        private Button testBtn;
     }
 }

@@ -17,6 +17,8 @@ namespace tube_mixing_software
         private int idFuncionario;
         private string cargoFuncionario;
 
+        private System.Windows.Forms.Timer timerAtualizaTemp;
+
         public Principal(string nome, int id, string cargo)
         {
             InitializeComponent();
@@ -28,6 +30,19 @@ namespace tube_mixing_software
         private void Principal_Load(object sender, EventArgs e)
         {
             funcionarioLbl.Text = $"Bem-vindo, {nomeFuncionario}\nID: {idFuncionario}\nCargo: {cargoFuncionario}";
+
+            timerAtualizaTemp = new System.Windows.Forms.Timer();
+            timerAtualizaTemp.Interval = 1000; // Atualiza a cada 1 segundo
+            timerAtualizaTemp.Tick += TimerAtualizaTemp_Tick;
+            timerAtualizaTemp.Start();
+        }
+
+        private void TimerAtualizaTemp_Tick(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SerialManager.UltimaTemperatura))
+            {
+                tempLbl.Text = SerialManager.UltimaTemperatura + " °C";
+            }
         }
 
         private void iniciarBtn_Click(object sender, EventArgs e)
