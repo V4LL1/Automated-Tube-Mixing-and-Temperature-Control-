@@ -49,8 +49,8 @@ namespace tube_mixing_software
         {
             if (cargoFuncionario == "Técnico em Análises Clínicas")
             {
-                Iniciar iniciar = new Iniciar();
-                iniciar.Show();
+                Iniciar iniciar = new Iniciar(idFuncionario);
+                iniciar.Show(); 
             }
             else
             {

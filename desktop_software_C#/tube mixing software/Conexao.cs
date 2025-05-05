@@ -13,15 +13,14 @@ namespace tube_mixing_software {
 
         public static MySqlConnection ObterConexao()
         {
-            if (conn.State != System.Data.ConnectionState.Open)
-                conn.Open();
-
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            conn.Open();
             return conn;
         }
 
         public static void FecharConexao()
         {
-            if (conn.State == System.Data.ConnectionState.Open)
+            if (conn != null && conn.State == System.Data.ConnectionState.Open)
                 conn.Close();
         }
     }

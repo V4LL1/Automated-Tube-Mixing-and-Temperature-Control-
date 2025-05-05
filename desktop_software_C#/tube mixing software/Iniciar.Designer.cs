@@ -36,6 +36,10 @@
             label1 = new Label();
             tempoTxt = new TextBox();
             tempLbl = new Label();
+            comboFrascos = new ComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            comboBox2 = new ComboBox();
             SuspendLayout();
             // 
             // iniciarBtn
@@ -43,7 +47,7 @@
             iniciarBtn.BackColor = Color.FromArgb(60, 110, 113);
             iniciarBtn.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             iniciarBtn.ForeColor = Color.White;
-            iniciarBtn.Location = new Point(225, 403);
+            iniciarBtn.Location = new Point(211, 477);
             iniciarBtn.Margin = new Padding(2, 3, 2, 3);
             iniciarBtn.Name = "iniciarBtn";
             iniciarBtn.Size = new Size(170, 62);
@@ -62,7 +66,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(60, 110, 113);
-            label4.Location = new Point(170, 126);
+            label4.Location = new Point(165, 36);
             label4.Name = "label4";
             label4.Size = new Size(116, 18);
             label4.TabIndex = 20;
@@ -70,9 +74,9 @@
             // 
             // txtTemp
             // 
-            txtTemp.Location = new Point(170, 159);
+            txtTemp.Location = new Point(165, 69);
             txtTemp.Name = "txtTemp";
-            txtTemp.Size = new Size(277, 25);
+            txtTemp.Size = new Size(102, 25);
             txtTemp.TabIndex = 19;
             // 
             // label1
@@ -80,7 +84,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(60, 110, 113);
-            label1.Location = new Point(170, 248);
+            label1.Location = new Point(165, 146);
             label1.Name = "label1";
             label1.Size = new Size(92, 18);
             label1.TabIndex = 18;
@@ -88,9 +92,9 @@
             // 
             // tempoTxt
             // 
-            tempoTxt.Location = new Point(170, 279);
+            tempoTxt.Location = new Point(165, 177);
             tempoTxt.Name = "tempoTxt";
-            tempoTxt.Size = new Size(277, 25);
+            tempoTxt.Size = new Size(102, 25);
             tempoTxt.TabIndex = 17;
             // 
             // tempLbl
@@ -98,10 +102,48 @@
             tempLbl.AutoSize = true;
             tempLbl.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tempLbl.ForeColor = Color.FromArgb(60, 110, 113);
-            tempLbl.Location = new Point(301, 126);
+            tempLbl.Location = new Point(296, 36);
             tempLbl.Name = "tempLbl";
             tempLbl.Size = new Size(0, 18);
             tempLbl.TabIndex = 21;
+            // 
+            // comboFrascos
+            // 
+            comboFrascos.FormattingEnabled = true;
+            comboFrascos.Location = new Point(165, 270);
+            comboFrascos.Name = "comboFrascos";
+            comboFrascos.Size = new Size(377, 26);
+            comboFrascos.TabIndex = 22;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(60, 110, 113);
+            label2.Location = new Point(165, 240);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 18);
+            label2.TabIndex = 23;
+            label2.Text = "Frasco:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(60, 110, 113);
+            label3.Location = new Point(165, 333);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 18);
+            label3.TabIndex = 24;
+            label3.Text = "Paciente:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(165, 364);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(377, 26);
+            comboBox2.TabIndex = 25;
             // 
             // Iniciar
             // 
@@ -109,6 +151,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 240, 248);
             ClientSize = new Size(624, 601);
+            Controls.Add(comboBox2);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(comboFrascos);
             Controls.Add(tempLbl);
             Controls.Add(label4);
             Controls.Add(txtTemp);
@@ -134,5 +180,9 @@
         private Label label1;
         private TextBox tempoTxt;
         private Label tempLbl;
+        private ComboBox comboFrascos;
+        private Label label2;
+        private Label label3;
+        private ComboBox comboBox2;
     }
 }
