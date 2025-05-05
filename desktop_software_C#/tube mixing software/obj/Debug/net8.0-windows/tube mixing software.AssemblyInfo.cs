@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tube mixing software")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23bd503bf21179ee16bc5825b297676842619f73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5363426edc2a66ff71e551c1550809d136598b3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("tube mixing software")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tube mixing software")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

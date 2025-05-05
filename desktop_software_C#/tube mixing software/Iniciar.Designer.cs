@@ -35,8 +35,7 @@
             txtTemp = new TextBox();
             label1 = new Label();
             tempoTxt = new TextBox();
-            lblTemperatura = new Label();
-            textBox1 = new TextBox();
+            tempLbl = new Label();
             SuspendLayout();
             // 
             // iniciarBtn
@@ -94,22 +93,15 @@
             tempoTxt.Size = new Size(277, 25);
             tempoTxt.TabIndex = 17;
             // 
-            // lblTemperatura
+            // tempLbl
             // 
-            lblTemperatura.AutoSize = true;
-            lblTemperatura.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTemperatura.ForeColor = Color.FromArgb(60, 110, 113);
-            lblTemperatura.Location = new Point(301, 126);
-            lblTemperatura.Name = "lblTemperatura";
-            lblTemperatura.Size = new Size(0, 18);
-            lblTemperatura.TabIndex = 21;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(170, 503);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 25);
-            textBox1.TabIndex = 22;
+            tempLbl.AutoSize = true;
+            tempLbl.Font = new Font("Georgia", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tempLbl.ForeColor = Color.FromArgb(60, 110, 113);
+            tempLbl.Location = new Point(301, 126);
+            tempLbl.Name = "tempLbl";
+            tempLbl.Size = new Size(0, 18);
+            tempLbl.TabIndex = 21;
             // 
             // Iniciar
             // 
@@ -117,8 +109,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 240, 248);
             ClientSize = new Size(624, 601);
-            Controls.Add(textBox1);
-            Controls.Add(lblTemperatura);
+            Controls.Add(tempLbl);
             Controls.Add(label4);
             Controls.Add(txtTemp);
             Controls.Add(label1);
@@ -129,6 +120,7 @@
             Margin = new Padding(4);
             Name = "Iniciar";
             Text = "Iniciar";
+            Load += Iniciar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,7 +133,6 @@
         private TextBox txtTemp;
         private Label label1;
         private TextBox tempoTxt;
-        private Label lblTemperatura;
-        private TextBox textBox1;
+        private Label tempLbl;
     }
 }
