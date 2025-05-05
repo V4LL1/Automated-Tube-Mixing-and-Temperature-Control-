@@ -55,13 +55,16 @@
             emailTxt.Name = "emailTxt";
             emailTxt.Size = new Size(277, 23);
             emailTxt.TabIndex = 4;
+            emailTxt.Text = "fe@clinica.com";
             // 
             // senhaTxt
             // 
             senhaTxt.Location = new Point(168, 245);
             senhaTxt.Name = "senhaTxt";
+            senhaTxt.PasswordChar = '*';
             senhaTxt.Size = new Size(277, 23);
             senhaTxt.TabIndex = 5;
+            senhaTxt.Text = "123";
             // 
             // label1
             // 

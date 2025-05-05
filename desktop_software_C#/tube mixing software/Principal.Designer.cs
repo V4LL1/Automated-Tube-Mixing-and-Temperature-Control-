@@ -33,9 +33,7 @@
             historicoBtn = new Button();
             iniciarBtn = new Button();
             label1 = new Label();
-            label2 = new Label();
             tempLbl = new Label();
-            umidadeLbl = new Label();
             SuspendLayout();
             // 
             // funcionarioLbl
@@ -92,40 +90,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(634, 180);
+            label1.Location = new Point(659, 273);
             label1.Name = "label1";
             label1.Size = new Size(159, 18);
             label1.TabIndex = 10;
             label1.Text = "Temperatura atual:";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(634, 390);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 18);
-            label2.TabIndex = 11;
-            label2.Text = "Umidade atual:";
-            // 
             // tempLbl
             // 
             tempLbl.AutoSize = true;
             tempLbl.Font = new Font("Georgia", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tempLbl.Location = new Point(653, 218);
+            tempLbl.Location = new Point(678, 311);
             tempLbl.Name = "tempLbl";
             tempLbl.Size = new Size(108, 72);
             tempLbl.TabIndex = 12;
             tempLbl.Text = "25";
-            // 
-            // umidadeLbl
-            // 
-            umidadeLbl.AutoSize = true;
-            umidadeLbl.Font = new Font("Georgia", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            umidadeLbl.Location = new Point(653, 435);
-            umidadeLbl.Name = "umidadeLbl";
-            umidadeLbl.Size = new Size(108, 72);
-            umidadeLbl.TabIndex = 13;
-            umidadeLbl.Text = "25";
             // 
             // Principal
             // 
@@ -133,9 +112,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 240, 248);
             ClientSize = new Size(1009, 729);
-            Controls.Add(umidadeLbl);
             Controls.Add(tempLbl);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(sairBtn);
             Controls.Add(historicoBtn);
@@ -158,8 +135,6 @@
         private Button historicoBtn;
         private Button iniciarBtn;
         private Label label1;
-        private Label label2;
         private Label tempLbl;
-        private Label umidadeLbl;
     }
 }
