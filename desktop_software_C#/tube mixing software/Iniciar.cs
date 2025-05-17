@@ -54,12 +54,12 @@ namespace tube_mixing_software
             // Compara as temperaturas e envia o comando adequado
             if (tempAtual < tempDesejada)
             {
-                EnviarComando("ON1:10"); // Liga relé 1 por 10 segundos
+                EnviarComando("ON1:" + tempDesejada); // Liga relé 1 por 10 segundos
                 MessageBox.Show($"Temperatura atual ({tempAtual}°C) < desejada ({tempDesejada}°C). Ligando RELÉ 1.");
             }
             else if (tempAtual > tempDesejada)
             {
-                EnviarComando("ON2:10"); // Liga relé 2 por 10 segundos
+                EnviarComando("ON2: " + tempDesejada); // Liga relé 2 por 10 segundos
                 MessageBox.Show($"Temperatura atual ({tempAtual}°C) > desejada ({tempDesejada}°C). Ligando RELÉ 2.");
             }
             else
